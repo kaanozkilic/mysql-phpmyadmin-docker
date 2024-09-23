@@ -1,16 +1,16 @@
 {
-    "name": "MySQL Dev Container",
-    "dockerComposeFile": ["../docker-compose.yml"],
-    "service": "db",
-    "workspaceFolder": "/workspace",
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "extensions": [
-      "ms-azuretools.vscode-docker",
-    ],
-    "remoteUser": "vscode",
-    "postCreateCommand": "echo 'Dev container is ready!'",
-    "shutdownAction": "stopCompose"
-  }
-  
+  "name": "MySQL Dev Container",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "db",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "echo 'Dev container is ready!'",
+  "shutdownAction": "stopCompose"
+}
