@@ -1,0 +1,16 @@
+{
+    "name": "MySQL Dev Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "db",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "formulahendry.vscode-sql-formatter" // Optional: SQL formatting extension
+    ],
+    "remoteUser": "vscode",
+    "postCreateCommand": "echo 'Dev container is ready!'",
+    "shutdownAction": "stopCompose"
+  }
+  
