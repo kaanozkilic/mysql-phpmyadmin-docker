@@ -2,6 +2,7 @@
     "name": "MySQL Dev Container",
     "dockerComposeFile": ["../docker-compose.yml"],
     "service": "db",
+    "workspaceFolder": "/workspace",
     "settings": {
       "terminal.integrated.shell.linux": "/bin/bash"
     },
