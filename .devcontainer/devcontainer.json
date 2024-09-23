@@ -8,7 +8,6 @@
     },
     "extensions": [
       "ms-azuretools.vscode-docker",
-      "formulahendry.vscode-sql-formatter" // Optional: SQL formatting extension
     ],
     "remoteUser": "vscode",
     "postCreateCommand": "echo 'Dev container is ready!'",
