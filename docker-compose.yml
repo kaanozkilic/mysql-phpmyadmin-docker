@@ -15,7 +15,7 @@ services:
       - db
     restart: always
     ports:
-      - '88:80'
+      - '81:80'
     environment:
       PMA_HOST: db
 

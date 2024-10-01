@@ -4,6 +4,6 @@
   "service": "db",
   "workspaceFolder": "/workspace",
   "mounts": [
-    "source=/workspace,target=/workspaces/mysql-phpmyadmin-docker/workspace,type=bind,consistency=cached"
+    "source=/workspace,target=/workspace,type=bind,consistency=cached"
   ]
 }
