@@ -4,6 +4,6 @@
   "service": "db",
   "workspaceFolder": "/workspace",
   "mounts": [
-    "source=/workspace,target=/workspace,type=bind,consistency=cached"
+    "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind" 
   ]
 }
