@@ -2,10 +2,8 @@
   "name": "MySQL Dev Container",
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "db",
-  "settings": {
-        "terminal.integrated.defaultProfile.linux": "/bin/bash"
-    },
-    "extensions": [
-        "ms-azuretools.vscode-docker"
-    ]
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=/workspace,target=/workspace,type=bind,consistency=cached"
+  ]
 }
