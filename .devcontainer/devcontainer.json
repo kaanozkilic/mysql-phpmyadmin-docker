@@ -2,5 +2,7 @@
   "name": "MySQL Dev Container",
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "db",
-   "workspaceFolder": "/workspace"
+   "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${workspaceFolder},target=/workspace,type=bind,consistency=cached"]
 }
