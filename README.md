@@ -3,9 +3,10 @@ A MySQL development environment with Docker and phpMyAdmin for learning MySQL
 
 # Setting Up a Codespace in GitHub
 
-1. Navigate to your repository on GitHub.
-2. Click the **Code** button and select **Create codespace on main**.
-3. Wait a few moments for your codespace environment to be set up.
+1.Clone this repostitory to your own GitHub account.
+2. Navigate to your repository on GitHub.
+3. Click the **Code** button and select **Create codespace on main**.
+4. Wait a few moments for your codespace environment to be set up.
 
 Once the setup is complete, you can perform all your tasks directly within the browser-based codespace.
 
