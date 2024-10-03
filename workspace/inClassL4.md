@@ -1,0 +1,1 @@
+## In-Class Task 4: Working with Tables - Select & Operators
