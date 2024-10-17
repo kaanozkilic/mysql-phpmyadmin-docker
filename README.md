@@ -18,6 +18,7 @@ If you encounter the error message **Workspace does not exist**, follow these st
 
 This should resolve the issue and allow you to continue working in your codespace.
 
+Note: If you delete your current codespace and create a new one, all databases and tables you've created will be lost. To keep them, make sure to back up your data using the database import and export functions.
 
 ## Connecting to MySQL Database
 
