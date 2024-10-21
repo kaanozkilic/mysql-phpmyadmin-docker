@@ -4,9 +4,6 @@
   "service": "db",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/workspace",  // Automatically resolve workspace folder
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "/bin/bash"
-  },
   "remoteEnv": {
     "MYSQL_PASSWORD": "${{ secrets.MYSQL_PASSWORD }}"
   }
