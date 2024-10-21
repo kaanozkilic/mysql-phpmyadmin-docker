@@ -3,7 +3,7 @@
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "db",
   "workspaceFolder": "/workspace",
-  "workspaceMount": "source=/workspaces/${localWorkspaceFolderBasename},target=/workspace,type=bind",
+  "workspaceMount": "source=/workspace,target=/workspaces/${localWorkspaceFolderBasename}/workspace,type=bind",
   "remoteEnv": {
     "MYSQL_PASSWORD": "${{ secrets.MYSQL_PASSWORD }}"
   }
