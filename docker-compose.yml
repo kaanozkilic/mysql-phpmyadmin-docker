@@ -3,7 +3,7 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}  # This is injected from GitHub Secrets
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}  # This is injected from GitHub Secrets in codespace and in local environment you need to create a file named .env and save your passord for the database service
     ports:
       - "6033:3306"
     volumes:
