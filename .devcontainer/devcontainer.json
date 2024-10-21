@@ -2,12 +2,11 @@
   "name": "MySQL Dev Container",
   "dockerComposeFile": ["./docker-compose.yml"],  // Ensure correct relative path
   "service": "db",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",  // Automatically resolve workspace folder
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/workspace",  // Automatically resolve workspace folder
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
   "settings": {
     "terminal.integrated.defaultProfile.linux": "/bin/bash"
   },
-  "extensions": [],
   "remoteEnv": {
     "MYSQL_PASSWORD": "${{ secrets.MYSQL_PASSWORD }}"
   }
