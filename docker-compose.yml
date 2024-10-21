@@ -3,11 +3,12 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}  # This is injected from GitHub Secrets
     ports:
       - "6033:3306"
     volumes:
       - db_data26:/var/lib/mysql
+      - ./workspace:/workspace
   phpmyadmin:
     image: phpmyadmin
     depends_on:
