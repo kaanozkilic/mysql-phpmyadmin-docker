@@ -3,11 +3,12 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "6033:3306"
     volumes:
-      - db_data24:/var/lib/mysql
+      - db_data25:/var/lib/mysql
+      - ./workspace:/workspace
 
   phpmyadmin:
     image: phpmyadmin
@@ -19,4 +20,4 @@ services:
     environment:
       PMA_HOST: db
 volumes:
-  db_data24:
+  db_data25:
