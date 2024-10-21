@@ -8,8 +8,6 @@ services:
       - "6033:3306"
     volumes:
       - db_data25:/var/lib/mysql
-      - ./workspace:/workspace
-
   phpmyadmin:
     image: phpmyadmin
     depends_on:
