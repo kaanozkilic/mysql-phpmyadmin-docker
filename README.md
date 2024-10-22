@@ -38,14 +38,14 @@ Follow the steps below to set up a GitHub Codespace. Codespaces offer a cloud-ba
 2. Click **Add Port** and enter **88** as the port number.
 3. Once the port is added, a forwarded address for port 88 will appear. Click on the forwarded address to open phpMyAdmin.
 5. Use your MySQL credentials to log in and start working with your databases.
-  
-
 
 ![Example Ports](https://raw.githubusercontent.com/dipaish/dipaish/refs/heads/main/images/courseRelatedImages/ports.png)
 
 > **Note**: It is important to verify that both **ports 88 and 6033 are open and forwarded** correctly to avoid any connectivity issues while working with your databases.
 
 > **Note**: If you delete your current Codespace and create a new one, **all databases and tables you’ve created will be lost**. To preserve them, make sure to back up your data using the database import/export functions.
+
+---
 
 ## Connecting to MySQL Database in codespace with CLI
 
@@ -71,10 +71,12 @@ In addition to the Codespace environment in GitHub, you will also set up a simil
    git clone https://github.com/your-username/your-repository.git
    ``` 
 ### Step 2: Create a .env File
-In the root directory of your cloned repository, create a new file named **.env** Open the .env file and add the following line. Replace **yourpassword** with your own password. This will be your login password for the database service in the local environment.
-  ```sh
+1. In the root directory of your cloned repository, create a new file named **.env** 
+2. Open the .env file and add the following line and save the file
+   ```sh
    MYSQL_PASSWORD=yourpassword
-   ``` 
+    ``` 
+> **Note**  Replace **yourpassword** with your own password. This will be your login password for the database service in the local environment.
 
 ### Step 3: Reopen in Container (VS Code)
 
