@@ -10,10 +10,10 @@ Follow the steps below to set up a GitHub Codespace. Codespaces offer a cloud-ba
 
 ### Step 2: Set Up a Codespace Secret
 1. Navigate to **your repository** on GitHub.
-2. Click on the **"Settings"** tab at the top of the repository page.
+2. Click on the **Settings** tab at the top of the repository page.
 3. In the left sidebar, scroll down and find the **"Secrets and variables"** section.
-4. Click on **"Codespaces"** under this section.
-5. Click the **"New repository secret"** button.
+4. Click on **Codespaces** under this section.
+5. Click the **New repository secret** button.
 6. Provide a unique name for the secret, using **UPPERCASE letters with underscores** (e.g., `MYSQL_PASSWORD`).
 7. **Enter the secret value** in the text box (e.g., your database password). This will be your password for logging in to the database within the Codespace environment.
 8. Click the **"Add secret"** button to save the secret.
@@ -80,8 +80,8 @@ In addition to the Codespace environment in GitHub, you will also set up a simil
 
 ### Step 3: Reopen in Container (VS Code)
 
-1. Make sure you have the ¨**Remote - Containers** extension installed in your local Visual Studio Code.
-2. When prompted, click **"Reopen in Container".**
+1. Make sure you have the **Remote - Containers** extension installed in your local Visual Studio Code.
+2. When prompted, click **Reopen in Container.**
 3. Wait a couple of minutes for your local development container to set up.
 
 > Your local environment will now be ready to use, with all required dependencies and tools installed within the container.
