@@ -80,7 +80,7 @@ In addition to the Codespace environment in GitHub, you will also set up a simil
 
 ### Step 3: Reopen in Container (VS Code)
 
-1. Make sure you have the **Remote - Containers** extension installed in your local Visual Studio Code.
+1. Make sure you have the **Remote - Explorer** extension installed in your local Visual Studio Code.
 2. When prompted, click **Reopen in Container.**
 3. Wait a couple of minutes for your local development container to set up.
 
